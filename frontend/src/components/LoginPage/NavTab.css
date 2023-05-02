@@ -1,0 +1,27 @@
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.nav {
+    color: 'white';
+    text-decoration: solid;
+}
+.nav:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.login-nav {
+    color: 'green';
+}
+
+.login-nav:hover {
+    cursor: pointer;
+}
