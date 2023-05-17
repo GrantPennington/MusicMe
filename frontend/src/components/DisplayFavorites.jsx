@@ -6,7 +6,6 @@ function DisplayFavorites({ token }) {
     const [favorites, setFavorites] = useState([])
 
     const getFavorites = async () => {
-        //e.preventDefault()
         const {data} = await axios.get("https://api.spotify.com/v1/me/tracks", {
             headers: {
                 Authorization: `Bearer ${token}`
@@ -15,8 +14,6 @@ function DisplayFavorites({ token }) {
         console.log('DATA --> ',data.items)
         setFavorites(data.items)
     }
-
-    //getFavorites()
 
     useEffect(() => {
         getFavorites()
@@ -32,13 +29,5 @@ function DisplayFavorites({ token }) {
         </>
     )
 }
-
-/*
-{favorites!=="" &&
-                favorites.map((track) => 
-                    <h3 key={track.id}>{track.name}</h3>
-                )
-            }
-*/
 
 export default DisplayFavorites

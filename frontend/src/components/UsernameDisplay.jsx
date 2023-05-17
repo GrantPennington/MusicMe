@@ -1,9 +1,8 @@
 import React from 'react'
 import { Typography } from 'antd';
 import UserContext from '../context/UserContext';
-import CustomButton from './CustomButton';
 const { Title } = Typography;
-import { Avatar, Space } from 'antd';
+import { Avatar } from 'antd';
 import { UserOutlined } from '@ant-design/icons';
 
 function UsernameDisplay() {

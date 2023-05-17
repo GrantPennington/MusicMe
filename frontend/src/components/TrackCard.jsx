@@ -1,15 +1,11 @@
 import React from 'react'
-import { Avatar, Card, Space } from 'antd';
-import { UserOutlined } from '@ant-design/icons';
-const { Meta } = Card;
+import { Card, Space } from 'antd';
 import { Col, Row } from 'antd';
 
 function TrackCard({ track }) {
-    //console.log('TRACK --> ',track.track.name)
     return (
         <>
         <Space key={track.track.id} direction="vertical" size={'medium'}>
-                {/*<a href={artist.external_urls.spotify} target='_blank'>*/}
                 <Card
                     hoverable
                     style={{

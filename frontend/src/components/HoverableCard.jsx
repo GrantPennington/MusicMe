@@ -1,18 +1,7 @@
 import React from 'react'
-import { Avatar, Card, Space } from 'antd';
-import { UserOutlined } from '@ant-design/icons';
-import Title from 'antd/es/typography/Title';
-const { Meta } = Card;
 import { Col, Row } from 'antd';
 
 function HoverableCard({ width, height, content }) {
-
-    const GridColumn = ({ id }) => {
-        return (
-          <Col span={8} key={id} style={{ backgroundColor: 'blue' }}>col-8</Col>
-        )
-    }
-
 
     return (
             <Row style={{ borderRadius: 7,
@@ -41,18 +30,3 @@ function HoverableCard({ width, height, content }) {
 }
 
 export default HoverableCard
-
-/*style={{
-                    width: width || '90%',
-                    height: height || 75,
-                    
-                }}
-
-                borderRadius: 7,
-                    backgroundColor: 'blue',
-                    display: 'flex', justifyContent: 'space-evenly', alignItems: 'center'
-
-<GridColumn id={'col-1'}/>
-                <GridColumn id={'col-2'}/>
-                <GridColumn id={'col-3'}/>
-                */

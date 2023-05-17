@@ -10,11 +10,4 @@ function SlidingText({ description, style }) {
   )
 }
 
-/*
-<div className={'text-slide'}>
-        
-    </div>
-
-*/
-
 export default SlidingText

@@ -1,5 +1,9 @@
 import React, { createContext, useState } from 'react'
 
+/*
+    React Context to hold the state data for generating a playlist.
+*/
+
 const GenerateContext = createContext({
     data: {},
     updateData: () => {},
@@ -22,7 +26,6 @@ export function GenerateContextProvider(props) {
                 ...data,
                 [key]: value,
             }
-            //console.log('UPDATING --> ',updated)
             return updated
         })
     }

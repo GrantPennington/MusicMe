@@ -1,5 +1,9 @@
 import React, { createContext, useState } from 'react'
 
+/*
+    React Context for storing the user state data.
+*/
+
 const UserContext = createContext({
     user: {},
     updateUser: () => {},
@@ -26,7 +30,6 @@ export function UserContextProvider(props) {
                 "ProfileImg": image===[] ? '' : image[0].url || user.ProfileImg,
                 "Playlists": user.Playlists
             }
-            //console.log('UPDATING CONTEXT -> ',updated)
             return updated
         })
     }

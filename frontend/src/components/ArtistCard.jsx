@@ -1,10 +1,8 @@
 import React from 'react'
-import { Avatar, Card, Space } from 'antd';
-import { UserOutlined } from '@ant-design/icons';
+import { Card, Space } from 'antd';
 const { Meta } = Card;
 
 function ArtistCard({ artist }) {
-    //console.log('ARTIST --> ',artist)
   return (
     <Space direction="vertical" size={'medium'}>
             <a href={artist.external_urls.spotify} target='_blank'>
@@ -27,5 +25,3 @@ function ArtistCard({ artist }) {
 }
 
 export default ArtistCard
-
-// <Avatar shape="square" size={"auto"} icon={<UserOutlined />}/>

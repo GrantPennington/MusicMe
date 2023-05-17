@@ -14,7 +14,7 @@ import GeneratePlaylist from './GeneratePlaylist';
 import DisplayPlaylists from './DisplayPlaylists';
 import TransferPlaylist from './TransferPlaylist';
 import SearchArtists from './SearchArtists';
-import DisplayFavorites from './DIsplayFavorites';
+import DisplayFavorites from './DisplayFavorites';
 
 function getItem(label, key, icon, children) {
   return {
@@ -138,8 +138,6 @@ const HomeLayout = () => {
             flexDirection: 'row',
             alignItems: 'center',
             borderBottom: "2px solid #3c4c80",
-            //backgroundColor: '#2ec775',
-            //backgroundColor: 'rgba(95, 40, 222, 0.5)'
           }}
         >
           <UsernameDisplay />
@@ -164,23 +162,18 @@ const HomeLayout = () => {
             }}
           >
             {selected === '1'
-              //&& <Home />
               && <GeneratePlaylist token={token} />
             }
             {selected === '2'
-              //&& <Home />
               && <TransferPlaylist />
             }
             {selected === '3'
-              //&& <Home />
               && <DisplayPlaylists updatePlaylists={getPlaylists} />
             }
             {selected === '4'
-              //&& <Home />
               && <DisplayFavorites token={token} />
             }
             {selected === '5'
-              //&& <Home />
               && <SearchArtists 
                 token={token}
               />

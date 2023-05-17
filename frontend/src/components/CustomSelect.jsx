@@ -1,5 +1,5 @@
 import React, { useContext, useState, useEffect } from 'react'
-import { Select, Space } from 'antd';
+import { Select } from 'antd';
 import GenerateContext from '../context/GenerateContext';
 
 function CustomSelect({ updateKey, options, w }) {
@@ -17,11 +17,9 @@ function CustomSelect({ updateKey, options, w }) {
         } else {
             setSelected(data['source_name'])
         }
-        //console.log(data[label])
     }, [data])
 
     const handleChange = (value) => {
-        //setSelected(value)
         Object.values(options).map((playlist) => {
             if(playlist.id===value){
                 updateData(updateKey, playlist.external_urls.spotify)

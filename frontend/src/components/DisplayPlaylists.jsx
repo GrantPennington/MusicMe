@@ -7,7 +7,6 @@ function DisplayPlaylists({ updatePlaylists }) {
 
     useEffect(() => {
         updatePlaylists()
-        //console.log('UPDATING PLAYLISTS')
     }, [])
 
     const playlists = user.Playlists

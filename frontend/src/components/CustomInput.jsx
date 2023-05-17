@@ -16,7 +16,6 @@ function CustomInput({ placeholder, width, label }) {
         if(data[label]===""){
             setInput("")
         }
-        //console.log(data[label])
     }, [data])
 
     return (
