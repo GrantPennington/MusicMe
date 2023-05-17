@@ -1,12 +1,12 @@
-# MusicMe
+# MusicMe - AI Driven Playlist Generation
 Author: _Grant Pennington_
 
 # Overview
 MusicMe is a Software Application developed for my Senior Capstone Project from Bellarmine University.
-The outcome of MusicMe is to create user curated Spotify playlists, using Decision Tree Machine Learning models, generated from a given, source playlist. The AI learns relationships between the audio track features Spotify appends to every track on their platform and finds new songs on Spotify that have similar audio track features to those on the source playlist. The UI allows users to Log In with their Spotify account, view various things from Spotify such as, the users playlists and favorites, and also allows you to search for artists from Spotify. All of this is done using the Spotify API.
-MusicMe utilizes React JS to create a powerful and responsive front end web application and Node JS for the backend. It uses the Spotify API to get user data, extract audio track features, create new playlists, and add new songs to those playlists.
+The outcome of MusicMe is to create user curated Spotify playlists, using Decision Tree machine learning models, generated from a given source playlist. The AI learns relationships between the audio track features Spotify appends to every track on their platform and finds new songs on Spotify that have similar audio track features to those on the source playlist. The UI allows users to Log In with their Spotify account, view various things from Spotify such as, the users playlists and favorites, and also allows you to search for artists from Spotify.
+MusicMe utilizes React JS to create a powerful and responsive front end and Node JS with express for the backend. It uses the Spotify API to get user data, extract audio track features, create new playlists, and add new songs to those playlists.
 
-# Abstract
+# Project Abstract
 Music is something that is universally loved and a huge part of people’s daily lives. However, finding new music that you enjoy can be tough. The goal of this project is to use various correlations between music track audio features to generate new playlists based on a given source playlist. MusicMe utilizes two machine learning algorithms along with the Spotify application programming interface (API) to find correlations between a user-submitted playlist and other audio tracks. MusicMe then suggests new playlists the user might enjoy as well as allowing users to explore other functionality of the Spotify API. AI models used to find correlations between various audio tracks include a random forest classifier for feature analysis and decision trees for predicting recommended tracks. The system employs the modern JavaScript frontend framework, React, as well as a node express backend to create a user-friendly interface for utilizing the tool.
 
 ## Generate Playlist Page
