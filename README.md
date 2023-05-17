@@ -17,7 +17,7 @@ The user inputs
 - - - -
 ![MusicMe Generate Screen](https://github.com/GrantPennington/MusicMe/assets/77215050/b0c7bf9e-2a06-4354-b600-e768f15950d1)
 
-## Custom Ratings (optional)
+## Manual Ratings (optional)
 The AI model uses to a rating system to understand the relationships between track data. In order to improve the models accuracy, the user can choose to manually rate each track, from the source playlist, based on how much they enjoy it. This can be tedious depending on the size of the playlist, so if the user does not want to rate each track the ratings will be randomly generated.
 - - - -
 ![MusicMe Advanced Settings](https://github.com/GrantPennington/MusicMe/assets/77215050/4cd70628-8e27-49ac-8209-766e288410a4)
